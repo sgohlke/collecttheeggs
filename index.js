@@ -1,12 +1,9 @@
-const numberOfEggs = 5
-const numberOfGrassPiles = 25
+const numberOfEggs = 6
+const numberOfGrassPiles = 24
 let eggLocations = []
 let numberOfFoundEggs=0
 
 function startGame() {
-    console.log('Starting game!')
-
-
     // Initialize new game
     eggLocations = []
     numberOfFoundEggs = 0
@@ -21,9 +18,6 @@ function startGame() {
         } while (eggLocations.includes(locationForEgg));
         eggLocations.push(locationForEgg)
     }
-   
-    console.log('eggLocations ' , eggLocations )
-
 
     // Create grass piles
     let grassPiles=''
@@ -35,9 +29,7 @@ function startGame() {
 }
 
 function checkForEgg(grassPileIndex) {
-    console.log('Checking pile ', grassPileIndex)
     if (eggLocations.includes(grassPileIndex)) {
-        console.log('Found egg on pile ', grassPileIndex)
         document.getElementById('field'+ grassPileIndex).src = 'egg.svg'
         eggLocations = eggLocations.filter( eggLocation => eggLocation !== grassPileIndex)
         numberOfFoundEggs++
@@ -45,7 +37,6 @@ function checkForEgg(grassPileIndex) {
         numberOfFoundEggs === numberOfEggs 
         ? numberOfFoundEggs + '<br>Gratulation! Du hast alle Eier gefunden!' 
         : numberOfFoundEggs
-
     }
 }
 
