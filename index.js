@@ -22,9 +22,8 @@ function startGame() {
     // Create grass piles
     let grassPiles = ''
     for (let grassIndex = 0; grassIndex < numberOfGrassPiles; grassIndex++) {
-        grassPiles += `<img id='field${grassIndex}' class='grassField' src='grass.svg' onclick='checkForEgg(${grassIndex})' width='100px' heigth='100px' alt='grass field' />`
+        grassPiles += `<img id='field${grassIndex}' class='grassField' src='grass.svg' onclick='checkForEgg(${grassIndex})' width='100px' height='100px' alt='grass field' />`
     }
-    // console.log('Add grass piles', grassPiles)
     document.getElementById('grassArea').innerHTML = grassPiles
 }
 

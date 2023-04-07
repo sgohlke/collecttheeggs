@@ -1,5 +1,5 @@
 #grassArea {
-   max-width: 65%;
+    max-width: 65%;
 }
 
 .grassField {
@@ -11,10 +11,24 @@
     font-size: 1.3em;
 }
 
-#description, #startGameButton, #soundLabel {
-    font-size: 1.2em;
+#description {
+    font-size: 1.3em;
 }
 
 #startGameButton {
     background-color: bisque;
+}
+
+#sound {
+    width: 48px;
+    height: 48px;
+}
+
+#soundLabel,
+#startGameButton {
+    font-size: 3.5em;
+}
+
+#startGameButton {
+    margin-right: 10px;
 }
