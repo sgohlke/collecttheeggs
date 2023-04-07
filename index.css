@@ -1,0 +1,23 @@
+#grassArea {
+   max-width: 60%;
+}
+
+.grassField {
+    width: 20%;
+    max-width: 100px;
+    border: 1px solid #ffffff;
+}
+
+#foundEggsText {
+    font-weight: 700;
+    font-size: 1.3em;
+    visibility: hidden;
+}
+
+#description, #startGameButton {
+    font-size: 1.2em;
+}
+
+#startGameButton {
+    background-color: bisque;
+}

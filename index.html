@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style></style>
+    <title>Ostereier-Suchspiel</title>
+</head>
+<body>
+    <h1>Das Ostereier-Suchspiel</h1>
+    <article>
+        <p id="description">Auf der Wiese unten sind mehrere Ostereier versteckt.<br>
+            Klicke auf "Starten" um das Spiel zu starten oder neu zu starten.<br>
+            Klicke auf die grünen Rasenflächen um zu gucken ob dort ein Osterei versteckt ist.</p>
+    </article>
+    <section>
+        <button id="startGameButton" onclick="startGame()">Starten</button><br><br>
+        <span id="foundEggsText">Anzahl der gefundenen Eier: <span id="numberOfFoundEggs">0</span></span><br><br>
+        <div id="grassArea"></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
