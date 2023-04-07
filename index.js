@@ -9,7 +9,6 @@ function startGame() {
     eggLocations = []
     numberOfFoundEggs = 0
     document.getElementById('numberOfFoundEggs').innerHTML = '0'
-    document.getElementById('foundEggsText').style.setProperty('visibility', 'visible')
 
     // "Set" eggs
     let locationForEgg = 0
@@ -63,3 +62,5 @@ function playSound(isFoundEgg) {
         oscillatorNode.start(0);
     }
 }
+
+window.onload = startGame
