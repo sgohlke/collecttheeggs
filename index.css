@@ -14,7 +14,7 @@
     visibility: hidden;
 }
 
-#description, #startGameButton {
+#description, #startGameButton, #soundLabel {
     font-size: 1.2em;
 }
 
